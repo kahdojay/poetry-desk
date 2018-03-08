@@ -1,0 +1,521 @@
+{
+  "entries": [
+    {
+      "synonyms": ["Adam Lindsay Gordon", "Adam Gordon", "Adam Lindsey Gordon", "Lindsey Gordon"],
+      "value": "Adam Lindsay Gordon"
+    },
+    {
+      "synonyms": ["Alan Seeger", "Alan Seeger"],
+      "value": "Alan Seeger"
+    },
+    {
+      "synonyms": ["Alexander Pope", "Alex Pope"],
+      "value": "Alexander Pope"
+    },
+    {
+      "synonyms": ["Algernon Charles Swinburne", "Algernon Swinburne", "Charles Swinburne", "Algernon Charles"],
+      "value": "Algernon Charles Swinburne"
+    },
+    {
+      "synonyms": ["Ambrose Bierce", "Ambrose Bierce"],
+      "value": "Ambrose Bierce"
+    },
+    {
+      "synonyms": ["Amy Levy", "Amy Levy"],
+      "value": "Amy Levy"
+    },
+    {
+      "synonyms": ["Andrew Marvell", "Andrew Marvell"],
+      "value": "Andrew Marvell"
+    },
+    {
+      "synonyms": ["Ann Taylor", "Ann Taylor"],
+      "value": "Ann Taylor"
+    },
+    {
+      "synonyms": ["Anne Bradstreet", "Anne Bradstreet"],
+      "value": "Anne Bradstreet"
+    },
+    {
+      "synonyms": ["Anne Bronte", "Anne Bronte"],
+      "value": "Anne Bronte"
+    },
+    {
+      "synonyms": ["Anne Killigrew", "Anne Killigrew"],
+      "value": "Anne Killigrew"
+    },
+    {
+      "synonyms": ["Anne Kingsmill Finch", "Anne Finch", "Kingsmill Finch", "Anne Kingsmill"],
+      "value": "Anne Kingsmill Finch"
+    },
+    {
+      "synonyms": ["Annie Louisa Walker", "Annie Walker", "Annie Louisa", "Louisa Walker", "Anne Louisa Walker", "Annie Luisa", "Annie Luisa Walker", "Anne Walker"],
+      "value": "Annie Louisa Walker"
+    },
+    {
+      "synonyms": ["Arthur Hugh Clough", "Arthur Clough", "Arthur Hugh", "Hugh Clough"],
+      "value": "Arthur Hugh Clough"
+    },
+    {
+      "synonyms": ["Ben Jonson", "Ben Johnson"],
+      "value": "Ben Jonson"
+    },
+    {
+      "synonyms": ["Charles Kingsley", "Charles Kingsley"],
+      "value": "Charles Kingsley"
+    },
+    {
+      "synonyms": ["Charles Sorley", "Charles Sorley"],
+      "value": "Charles Sorley"
+    },
+    {
+      "synonyms": ["Charlotte Bronte", "Charlotte Bronte"],
+      "value": "Charlotte Bronte"
+    },
+    {
+      "synonyms": ["Charlotte Smith", "Charlotte Smith"],
+      "value": "Charlotte Smith"
+    },
+    {
+      "synonyms": ["Christina Rossetti", "Christina Rossetti"],
+      "value": "Christina Rossetti"
+    },
+    {
+      "synonyms": ["Christopher Marlowe", "Christopher Marlowe"],
+      "value": "Christopher Marlowe"
+    },
+    {
+      "synonyms": ["Christopher Smart", "Christopher Smart"],
+      "value": "Christopher Smart"
+    },
+    {
+      "synonyms": ["Coventry Patmore", "Coventry Patmore"],
+      "value": "Coventry Patmore"
+    },
+    {
+      "synonyms": ["Edgar Allan Poe", "Edgar Allan Poe"],
+      "value": "Edgar Allan Poe"
+    },
+    {
+      "synonyms": ["Edmund Spenser", "Edmund Spenser"],
+      "value": "Edmund Spenser"
+    },
+    {
+      "synonyms": ["Edward Fitzgerald", "Edward Fitzgerald"],
+      "value": "Edward Fitzgerald"
+    },
+    {
+      "synonyms": ["Edward Lear", "Edward Lear"],
+      "value": "Edward Lear"
+    },
+    {
+      "synonyms": ["Edward Taylor", "Edward Taylor"],
+      "value": "Edward Taylor"
+    },
+    {
+      "synonyms": ["Edward Thomas", "Edward Thomas"],
+      "value": "Edward Thomas"
+    },
+    {
+      "synonyms": ["Eliza Cook", "Eliza Cook"],
+      "value": "Eliza Cook"
+    },
+    {
+      "synonyms": ["Elizabeth Barrett Browning", "Elizabeth Browning"],
+      "value": "Elizabeth Barrett Browning"
+    },
+    {
+      "synonyms": ["Emily Bronte", "Emily Bronte"],
+      "value": "Emily Bronte"
+    },
+    {
+      "synonyms": ["Emily Dickinson", "Emily Dickenson"],
+      "value": "Emily Dickinson"
+    },
+    {
+      "synonyms": ["Emma Lazarus", "Emma Lazarus"],
+      "value": "Emma Lazarus"
+    },
+    {
+      "synonyms": ["Ernest Dowson", "Ernest Dowson"],
+      "value": "Ernest Dowson"
+    },
+    {
+      "synonyms": ["Eugene Field", "Eugene Field"],
+      "value": "Eugene Field"
+    },
+    {
+      "synonyms": ["Francis Thompson", "Francis Thompson"],
+      "value": "Francis Thompson"
+    },
+    {
+      "synonyms": ["Geoffrey Chaucer", "Geoffrey Chaucer"],
+      "value": "Geoffrey Chaucer"
+    },
+    {
+      "synonyms": ["George Eliot", "George Eliot"],
+      "value": "George Eliot"
+    },
+    {
+      "synonyms": ["George Gordon Lord Byron", "George Gordon", "Lord Byron"],
+      "value": "George Gordon Lord Byron"
+    },
+    {
+      "synonyms": ["George Herbert", "George Herbert"],
+      "value": "George Herbert"
+    },
+    {
+      "synonyms": ["George Meredith", "George Meredith"],
+      "value": "George Meredith"
+    },
+    {
+      "synonyms": ["Gerard Manley Hopkins", "Gerard Hopkins"],
+      "value": "Gerard Manley Hopkins"
+    },
+    {
+      "synonyms": ["Helen Hunt Jackson", "Helen Jackson"],
+      "value": "Helen Hunt Jackson"
+    },
+    {
+      "synonyms": ["Henry David Thoreau", "Henry David Thoreau"],
+      "value": "Henry David Thoreau"
+    },
+    {
+      "synonyms": ["Henry Vaughan", "Henry Vaughan"],
+      "value": "Henry Vaughan"
+    },
+    {
+      "synonyms": ["Henry Wadsworth Longfellow", "Henry Longfellow"],
+      "value": "Henry Wadsworth Longfellow"
+    },
+    {
+      "synonyms": ["Hugh Henry Brackenridge", "Hugh Brackenridge"],
+      "value": "Hugh Henry Brackenridge"
+    },
+    {
+      "synonyms": ["Isaac Watts", "Isaac Watts"],
+      "value": "Isaac Watts"
+    },
+    {
+      "synonyms": ["James Henry Leigh Hunt", "James Hunt"],
+      "value": "James Henry Leigh Hunt"
+    },
+    {
+      "synonyms": ["James Thomson", "James Thomson"],
+      "value": "James Thomson"
+    },
+    {
+      "synonyms": ["James Whitcomb Riley", "James Riley"],
+      "value": "James Whitcomb Riley"
+    },
+    {
+      "synonyms": ["Jane Austen", "Jane Austen"],
+      "value": "Jane Austen"
+    },
+    {
+      "synonyms": ["Jane Taylor", "Jane Taylor"],
+      "value": "Jane Taylor"
+    },
+    {
+      "synonyms": ["John Clare", "John Clare"],
+      "value": "John Clare"
+    },
+    {
+      "synonyms": ["John Donne", "John Donne"],
+      "value": "John Donne"
+    },
+    {
+      "synonyms": ["John Dryden", "John Dryden"],
+      "value": "John Dryden"
+    },
+    {
+      "synonyms": ["John Greenleaf Whittier", "John Whittier"],
+      "value": "John Greenleaf Whittier"
+    },
+    {
+      "synonyms": ["John Keats", "John Keats"],
+      "value": "John Keats"
+    },
+    {
+      "synonyms": ["John McCrae", "John McCrae"],
+      "value": "John McCrae"
+    },
+    {
+      "synonyms": ["John Milton", "John Milton"],
+      "value": "John Milton"
+    },
+    {
+      "synonyms": ["John Trumbull", "John Trumbull"],
+      "value": "John Trumbull"
+    },
+    {
+      "synonyms": ["John Wilmot", "John Wilmot"],
+      "value": "John Wilmot"
+    },
+    {
+      "synonyms": ["Jonathan Swift", "Jonathan Swift"],
+      "value": "Jonathan Swift"
+    },
+    {
+      "synonyms": ["Joseph Warton", "Joseph Warton"],
+      "value": "Joseph Warton"
+    },
+    {
+      "synonyms": ["Joyce Kilmer", "Joyce Kilmer"],
+      "value": "Joyce Kilmer"
+    },
+    {
+      "synonyms": ["Julia Ward Howe", "Julia Howe"],
+      "value": "Julia Ward Howe"
+    },
+    {
+      "synonyms": ["Jupiter Hammon", "Jupiter Hammon"],
+      "value": "Jupiter Hammon"
+    },
+    {
+      "synonyms": ["Katherine Philips", "Katherine Philips"],
+      "value": "Katherine Philips"
+    },
+    {
+      "synonyms": ["Lady Mary Chudleigh", "Mary Chudleigh", "Lady Chudleigh"],
+      "value": "Lady Mary Chudleigh"
+    },
+    {
+      "synonyms": ["Lewis Carroll", "Lewis Carroll"],
+      "value": "Lewis Carroll"
+    },
+    {
+      "synonyms": ["Lord Alfred Tennyson", "Alfred Tennyson", "Lord Tennyson"],
+      "value": "Lord Alfred Tennyson"
+    },
+    {
+      "synonyms": ["Louisa May Alcott", "Louisa Alcott", "Luisa Alcott", "Louisa May", "Luisa May"],
+      "value": "Louisa May Alcott"
+    },
+    {
+      "synonyms": ["Major Henry Livingston Junior", "Henry Livingston Junior", "Henry Livingston", "Major Livingston", "Major Livingston Junior", "Henry Livingston Junior"],
+      "value": "Major Henry Livingston Junior"
+    },
+    {
+      "synonyms": ["Mark Twain", "Mark Twain"],
+      "value": "Mark Twain"
+    },
+    {
+      "synonyms": ["Mary Elizabeth Coleridge", "Mary Coleridge", "Elizabeth Coleridge"],
+      "value": "Mary Elizabeth Coleridge"
+    },
+    {
+      "synonyms": ["Matthew Arnold", "Matthew Arnold"],
+      "value": "Matthew Arnold"
+    },
+    {
+      "synonyms": ["Matthew Prior", "Matthew Prior"],
+      "value": "Matthew Prior"
+    },
+    {
+      "synonyms": ["Michael Drayton", "Michael Drayton"],
+      "value": "Michael Drayton"
+    },
+    {
+      "synonyms": ["Oliver Goldsmith", "Oliver Goldsmith"],
+      "value": "Oliver Goldsmith"
+    },
+    {
+      "synonyms": ["Oliver Wendell Holmes", "Oliver Wendell", "Oliver Holmes"],
+      "value": "Oliver Wendell Holmes"
+    },
+    {
+      "synonyms": ["Oscar Wilde", "Oscar Wilde"],
+      "value": "Oscar Wilde"
+    },
+    {
+      "synonyms": ["Paul Laurence Dunbar", "Paul Dunbar", "Laurence Dunbar"],
+      "value": "Paul Laurence Dunbar"
+    },
+    {
+      "synonyms": ["Percy Bysshe Shelley", "Percy Shelley"],
+      "value": "Percy Bysshe Shelley"
+    },
+    {
+      "synonyms": ["Philip Freneau", "Philip Freneau"],
+      "value": "Philip Freneau"
+    },
+    {
+      "synonyms": ["Phillis Wheatley", "Phillis Wheatley"],
+      "value": "Phillis Wheatley"
+    },
+    {
+      "synonyms": ["Ralph Waldo Emerson", "Waldo Emerson", "Ralph Emerson"],
+      "value": "Ralph Waldo Emerson"
+    },
+    {
+      "synonyms": ["Richard Crashaw", "Richard Crashaw"],
+      "value": "Richard Crashaw"
+    },
+    {
+      "synonyms": ["Richard Lovelace", "Richard Lovelace"],
+      "value": "Richard Lovelace"
+    },
+    {
+      "synonyms": ["Robert Browning", "Robert Browning"],
+      "value": "Robert Browning"
+    },
+    {
+      "synonyms": ["Robert Burns", "Robert Burns"],
+      "value": "Robert Burns"
+    },
+    {
+      "synonyms": ["Robert Herrick", "Robert Herrick"],
+      "value": "Robert Herrick"
+    },
+    {
+      "synonyms": ["Robert Louis Stevenson", "Robert Stevenson", "Louis Stevenson"],
+      "value": "Robert Louis Stevenson"
+    },
+    {
+      "synonyms": ["Robert Southey", "Robert Southey"],
+      "value": "Robert Southey"
+    },
+    {
+      "synonyms": ["Robinson", "Robinson"],
+      "value": "Robinson"
+    },
+    {
+      "synonyms": ["Rupert Brooke", "Rupert Brooke"],
+      "value": "Rupert Brooke"
+    },
+    {
+      "synonyms": ["Samuel Coleridge", "Samuel Coleridge"],
+      "value": "Samuel Coleridge"
+    },
+    {
+      "synonyms": ["Samuel Johnson", "Samuel Johnson"],
+      "value": "Samuel Johnson"
+    },
+    {
+      "synonyms": ["Sarah Flower Adams", "Sarah Adams"],
+      "value": "Sarah Flower Adams"
+    },
+    {
+      "synonyms": ["Sidney Lanier", "Sidney Lanier"],
+      "value": "Sidney Lanier"
+    },
+    {
+      "synonyms": ["Sir John Suckling", "John Suckling"],
+      "value": "Sir John Suckling"
+    },
+    {
+      "synonyms": ["Sir Philip Sidney", "Philip Sidney"],
+      "value": "Sir Philip Sidney"
+    },
+    {
+      "synonyms": ["Sir Thomas Wyatt", "Thomas Wyatt"],
+      "value": "Sir Thomas Wyatt"
+    },
+    {
+      "synonyms": ["Sir Walter Raleigh", "Walter Raleigh"],
+      "value": "Sir Walter Raleigh"
+    },
+    {
+      "synonyms": ["Sir Walter Scott", "Walter Scott"],
+      "value": "Sir Walter Scott"
+    },
+    {
+      "synonyms": ["Stephen Crane", "Stephen Crane"],
+      "value": "Stephen Crane"
+    },
+    {
+      "synonyms": ["Thomas Campbell", "Tom Campbell"],
+      "value": "Thomas Campbell"
+    },
+    {
+      "synonyms": ["Thomas Chatterton", "Tom Chatterton"],
+      "value": "Thomas Chatterton"
+    },
+    {
+      "synonyms": ["Thomas Flatman", "Tom Flatman"],
+      "value": "Thomas Flatman"
+    },
+    {
+      "synonyms": ["Thomas Gray", "Tom Gray", "Thomas Grey"],
+      "value": "Thomas Gray"
+    },
+    {
+      "synonyms": ["Thomas Hood", "Tom Hood"],
+      "value": "Thomas Hood"
+    },
+    {
+      "synonyms": ["Thomas Moore", "Tom Moore"],
+      "value": "Thomas Moore"
+    },
+    {
+      "synonyms": ["Thomas Warton", "Thomas Wharton", "Tom Warton"],
+      "value": "Thomas Warton"
+    },
+    {
+      "synonyms": ["Walt Whitman", "Walt Whitman"],
+      "value": "Walt Whitman"
+    },
+    {
+      "synonyms": ["Walter Savage Landor", "Walter Landor", "Walt Savage Landor", "Walt Landor"],
+      "value": "Walter Savage Landor"
+    },
+    {
+      "synonyms": ["Wilfred Owen", "Wilfred Owen"],
+      "value": "Wilfred Owen"
+    },
+    {
+      "synonyms": ["William Allingham", "Will Allingham"],
+      "value": "William Allingham"
+    },
+    {
+      "synonyms": ["William Barnes", "Will Barnes"],
+      "value": "William Barnes"
+    },
+    {
+      "synonyms": ["William Blake", "Will Blake"],
+      "value": "William Blake"
+    },
+    {
+      "synonyms": ["William Browne", "Will Browne"],
+      "value": "William Browne"
+    },
+    {
+      "synonyms": ["William Cowper", "Will Cowper"],
+      "value": "William Cowper"
+    },
+    {
+      "synonyms": ["William Cullen Bryant", "Will Cullen Bryant", "Will Bryant", "William Bryant", "William Cullen"],
+      "value": "William Cullen Bryant"
+    },
+    {
+      "synonyms": ["William Ernest Henley", "Will Ernest Henley", "William Henley", "Will Henley"],
+      "value": "William Ernest Henley"
+    },
+    {
+      "synonyms": ["William Lisle Bowles", "Will Lisle Bowles", "Will Bowles", "William Bowles"],
+      "value": "William Lisle Bowles"
+    },
+    {
+      "synonyms": ["William Morris", "Will Morris"],
+      "value": "William Morris"
+    },
+    {
+      "synonyms": ["William Shakespeare", "Will Shakespeare"],
+      "value": "William Shakespeare"
+    },
+    {
+      "synonyms": ["William Topaz McGonagall", "Will Topaz McGonagall", "William McGonagall", "Will McGonagall", "William Topaz"],
+      "value": "William Topaz McGonagall"
+    },
+    {
+      "synonyms": ["William Vaughn Moody", "Will Vaughn Moody", "Will Moody", "William Moody"],
+      "value": "William Vaughn Moody"
+    },
+    {
+      "synonyms": ["William Wordsworth", "Will Wordsworth"],
+      "value": "William Wordsworth"
+    }
+  ],
+  "name": "poet"
+}

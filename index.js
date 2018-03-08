@@ -1,19 +1,47 @@
+/*
+* HTTP Cloud Function.
+*
+* @param {Object} req Cloud Function request context.
+* @param {Object} res Cloud Function response context.
+*/
+// exports.poetryDesk = function helloHttp (req, res) {
+//   response = "This is a sample response from your webhook!" //Default response from the webhook to show it's working
+//
+//
+//   res.setHeader('Content-Type', 'application/json'); //Requires application/json MIME type
+//   res.send(JSON.stringify({ "speech": response, "displayText": response
+//   //"speech" is the spoken version of the response, "displayText" is the visual version
+//   }));
+// };
+
+
+
 'use strict';
 const http = require('http');
 
-const poetryDesk = (req, res) => {
+exports.poetryDesk = function poetryDesk (req, res) {
+  console.log('poetryDesk start request: ', req)
   let poet = '';
   if (req.body.result.parameters['poet']) {
     poet = req.body.result.parameters['poet'];
   }
+  console.log('poetryDesk poet: ', poet)
   // Call the poetry API
   getRandomPoemByPoet(poet)
     .then(output => {
+      console.log('poetryDesk getRandomPoemByPoet fulfillment output: ', output)
+      console.log('poetryDesk res: ', res)
       // Return the results of the poetry API to Dialogflow
       res.setHeader('Content-Type', 'application/json');
       res.send(JSON.stringify({ speech: output, displayText: output }));
+    }, rejectReason => {
+      console.log('poetryDesk getRandomPoemByPoet rejectReason: ', rejectReason)
+      console.log('poetryDesk res: ', res)
+      res.setHeader('Content-Type', 'application/json');
+      res.send(JSON.stringify({ speech: 'Something went wrong, check the logs', displayText: rejectReason }));
     })
     .catch(error => {
+      console.log('poetryDesk error: ', error)
       // If there is an error let the user know
       res.setHeader('Content-Type', 'application/json');
       res.send(JSON.stringify({ speech: error, displayText: error }));
@@ -27,7 +55,7 @@ const getRandomPoemByPoet = poet => {
     // neither encodeURI nor encodeURIComponent work here since GC converts spaces to %C2%A0, but the api only supports %20 or + for spaces
     const poemTitlePath =
       'http://poetrydb.org/author/' + poet.replace(/\s+/, '+') + '/title';
-
+    console.log('getRandomPoemByPoet API call: ', poemTitlePath)
     http.get(poemTitlePath, res => {
       // Handle server errors
       const { statusCode } = res;
@@ -47,16 +75,19 @@ const getRandomPoemByPoet = poet => {
       }); // accumulate response chunks
       res.on('end', () => {
         let poems = JSON.parse(body);
+        console.log('getRandomPoemByPoet http end poems: ', poems)
         if (poems.length > 0) {
           let randomPoemTitle =
             poems[Math.floor(Math.random() * poems.length)].title;
           getPoemByTitle(randomPoemTitle).then(speechOutputData => {
-            if (speechOutputData.poemError !== false) {
+            if (speechOutputData.poemFound !== false) {
               speechOutput = `This ${speechOutputData.poemLines}-line poem by ${
                 speechOutputData.poemAuthor
               } is called ${speechOutputData.poemTitle}: ${
                 speechOutputData.poemBody
               }`;
+              console.log('getRandomPoemByPoet resolve speechOutput: ', speechOutput)
+              resolve(speechOutput);
             } else {
               // todo: try a different poem from the list
             }
@@ -64,12 +95,14 @@ const getRandomPoemByPoet = poet => {
         } else {
           // todo: log the request
           speechOutput = `Sorry, I don't currently have any poems by ${poet}, but we'll make a note to check them out. Please try again later!`;
+          console.log('getRandomPoemByPoet resolve speechOutput: ', speechOutput)
+          resolve(speechOutput);
         }
-        resolve(speechOutput);
       });
 
       // Handle client errors
       res.on('error', error => {
+        console.log('getRandomPoemByPoet http error, rejecting: ', error)
         reject(error); // todo: do we want to resolve here instead?
       });
     });
@@ -78,7 +111,7 @@ const getRandomPoemByPoet = poet => {
 
 const getPoemByTitle = poemTitle => {
   return new Promise((resolve, reject) => {
-    let poemError = false;
+    let poemFound = true;
     let poemAuthor = '';
     let poemBody = '';
     let poemLines = '';
@@ -90,22 +123,24 @@ const getPoemByTitle = poemTitle => {
         poemData += d;
       });
       res.on('end', () => {
-        const poemObj = JSON.parse(poemData);
-        if (poemObj.length > 0) {
+        console.log('poemData: ', poemData)
+        if (poemObj.length > 0 && poemData) {
+          const poemObj = JSON.parse(poemData);
           poemTitle = poemObj[0].title;
           poemAuthor = poemObj[0].author;
           poemBody = poemObj[0].lines.join();
           poemLines = poemObj[0].linecount.toString();
         } else {
-          poemError = true;
+          poemFound = false;
         }
         const speechOutputData = {
-          poemError: poemError,
+          poemFound: poemFound,
           poemTitle: poemTitle,
           poemAuthor: poemAuthor,
           poemLines: poemLines,
           poemBody: poemBody,
         };
+        console.log('getPoemByTitle resolve speechOutputData: ', speechOutputData)
         resolve(speechOutputData);
       });
       res.on('error', error => {
@@ -113,9 +148,4 @@ const getPoemByTitle = poemTitle => {
       });
     });
   });
-};
-
-module.exports = {
-  poetryDesk: poetryDesk,
-  getRandomPoemByPoet: getRandomPoemByPoet,
 };
