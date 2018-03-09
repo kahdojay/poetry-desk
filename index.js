@@ -4,17 +4,6 @@
 * @param {Object} req Cloud Function request context.
 * @param {Object} res Cloud Function response context.
 */
-// exports.poetryDesk = function helloHttp (req, res) {
-//   response = "This is a sample response from your webhook!" //Default response from the webhook to show it's working
-//
-//
-//   res.setHeader('Content-Type', 'application/json'); //Requires application/json MIME type
-//   res.send(JSON.stringify({ "speech": response, "displayText": response
-//   //"speech" is the spoken version of the response, "displayText" is the visual version
-//   }));
-// };
-
-
 
 'use strict';
 const http = require('http');
@@ -124,8 +113,8 @@ const getPoemByTitle = poemTitle => {
       });
       res.on('end', () => {
         console.log('poemData: ', poemData)
+        const poemObj = JSON.parse(poemData);
         if (poemObj.length > 0 && poemData) {
-          const poemObj = JSON.parse(poemData);
           poemTitle = poemObj[0].title;
           poemAuthor = poemObj[0].author;
           poemBody = poemObj[0].lines.join();
