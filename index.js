@@ -100,7 +100,7 @@ const getRandomPoemByPoet = poet => {
 
 const getPoemByTitle = poemTitle => {
   return new Promise((resolve, reject) => {
-    let poemFound = true;
+    let poemFound = false;
     let poemAuthor = '';
     let poemBody = '';
     let poemLines = '';
@@ -119,8 +119,7 @@ const getPoemByTitle = poemTitle => {
           poemAuthor = poemObj[0].author;
           poemBody = poemObj[0].lines.join();
           poemLines = poemObj[0].linecount.toString();
-        } else {
-          poemFound = false;
+          poemFound = true;
         }
         const speechOutputData = {
           poemFound: poemFound,
