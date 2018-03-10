@@ -43,7 +43,7 @@ const getRandomPoemByPoet = poet => {
 
     // neither encodeURI nor encodeURIComponent work here since GC converts spaces to %C2%A0, but the api only supports %20 or + for spaces
     const poemTitlePath =
-      'http://poetrydb.org/author/' + poet.replace(/\s+/, '+') + '/title';
+      'http://poetrydb.org/author/' + poet.replace(/\s+/, '+') + '/title,linecount';
     console.log('getRandomPoemByPoet API call: ', poemTitlePath)
     http.get(poemTitlePath, res => {
       // Handle server errors
@@ -63,11 +63,17 @@ const getRandomPoemByPoet = poet => {
         body += d;
       }); // accumulate response chunks
       res.on('end', () => {
-        let poems = JSON.parse(body);
+        const poems = JSON.parse(body);
         console.log('getRandomPoemByPoet http end poems: ', poems)
-        if (poems.length > 0) {
+        const shortPoems = poems.filter((poem) => {
+          console.log('filtering poem with linecount: ', poem, poem.title, poem.linecount)
+          poem.linecount <= 30;
+        })
+        console.log('getRandomPoemByPoet shortPoems: ', shortPoems)
+        if (shortPoems.length > 0) {
           let randomPoemTitle =
-            poems[Math.floor(Math.random() * poems.length)].title;
+          shortPoems[Math.floor(Math.random() * shortPoems.length)].title;
+          console.log('getRandomPoemByPoet randomPoemTitle: ', randomPoemTitle)
           getPoemByTitle(randomPoemTitle).then(speechOutputData => {
             if (speechOutputData.poemFound !== false) {
               speechOutput = `This ${speechOutputData.poemLines}-line poem by ${
@@ -81,9 +87,10 @@ const getRandomPoemByPoet = poet => {
               // todo: try a different poem from the list
             }
           });
-        } else {
+        }
+        else {
           // todo: log the request
-          speechOutput = `Sorry, I don't currently have any poems by ${poet}, but we'll make a note to check them out. Please try again later!`;
+          speechOutput = `Sorry, I don't currently have any short poems by ${poet}, but we'll make a note to check them out. Please try again later!`;
           console.log('getRandomPoemByPoet resolve speechOutput: ', speechOutput)
           resolve(speechOutput);
         }
