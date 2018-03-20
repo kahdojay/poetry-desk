@@ -1,13 +1,12 @@
+'use strict';
+const http = require('http');
+
 /*
 * HTTP Cloud Function.
 *
 * @param {Object} req Cloud Function request context.
 * @param {Object} res Cloud Function response context.
 */
-
-'use strict';
-const http = require('http');
-
 exports.poetryDesk = function poetryDesk (req, res) {
   console.log('poetryDesk start request: ', req)
   let poet = '';
@@ -37,6 +36,11 @@ exports.poetryDesk = function poetryDesk (req, res) {
     });
 };
 
+/*
+* getRandomPoemByPoet
+*
+* @param {String} poet Poet name to search in poetrydb api, first then middle (if applicable) then last name, separated by spaces, requires exact match
+*/
 const getRandomPoemByPoet = poet => {
   return new Promise((resolve, reject) => {
     let speechOutput = '';
@@ -98,6 +102,11 @@ const getRandomPoemByPoet = poet => {
   });
 };
 
+/*
+* getPoemByTitle
+*
+* @param {String} poemTitle Poem title to search in poetrydb api, does not require exact match
+*/
 const getPoemByTitle = poemTitle => {
   return new Promise((resolve, reject) => {
     let poemFound = false;
