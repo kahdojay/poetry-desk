@@ -70,7 +70,7 @@ const getRandomPoemByPoet = poet => {
         let poems = JSON.parse(body);
         console.log('getRandomPoemByPoet http end poems: ', poems)
         if (poems.length > 0) {
-          let randomPoemTitle =
+          const randomPoemTitle =
             poems[Math.floor(Math.random() * poems.length)].title;
           getPoemByTitle(randomPoemTitle).then(speechOutputData => {
             if (speechOutputData.poemFound !== false) {
